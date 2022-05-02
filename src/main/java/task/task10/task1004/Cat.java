@@ -8,6 +8,8 @@ public class Cat {
     public static final int UNKNOWN = -1;
     private int age;
     private String name;
+    public final int maxWeight = 50;
+    public final int maxAge = 25;
 
     public Cat() {
         this.age = UNKNOWN;
