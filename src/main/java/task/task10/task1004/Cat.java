@@ -22,5 +22,6 @@ public class Cat {
     public static void main(String[] args) {
         Cat cat = new Cat();
         Cat cat2 = new Cat(50, "Васька");
+        Cat cat1 = new Cat(12, "Барсик");
     }
 }
