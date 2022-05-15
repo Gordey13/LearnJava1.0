@@ -13,11 +13,13 @@ public class Iphone {
     private String model;
     private String color;
     private int price;
+    private int gosNomer;
 
-    public Iphone(String model, String color, int price) {
+    public Iphone(String model, String color, int price, int gosNomer) {
         this.model = model;
         this.color = color;
         this.price = price;
+        this.gosNomer = gosNomer;
     }
 
     @Override
@@ -30,13 +32,14 @@ public class Iphone {
         }
         Iphone iphone = (Iphone) o;
         return price == iphone.price &&
+                gosNomer == iphone.gosNomer &&
                 Objects.equals(model, iphone.model) &&
                 Objects.equals(color, iphone.color);
     }
 
     public static void main(String[] args) {
-        Iphone iphone1 = new Iphone("X", "Black", 999);
-        Iphone iphone2 = new Iphone("X", "Black", 999);
+        Iphone iphone1 = new Iphone("X", "Black", 999, 123);
+        Iphone iphone2 = new Iphone("X", "Black", 999, 123);
 
         System.out.println(iphone1.equals(iphone2));
     }
