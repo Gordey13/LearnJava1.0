@@ -31,11 +31,24 @@ public class Iphone {
             return false;
         }
         Iphone iphone = (Iphone) o;
-        return price == iphone.price &&
-                gosNomer == iphone.gosNomer &&
-                Objects.equals(model, iphone.model) &&
+        if(price != iphone.price) return false;
+        if(gosNomer != iphone.gosNomer) return false;
+        return Objects.equals(model, iphone.model) &&
                 Objects.equals(color, iphone.color);
     }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(price, model, gosNomer, color);
+    }
+
+//    @Override
+//    public int hashCode() {
+//        int result = model == null ? 0 : model.hashCode();
+//        result = 31 * result + manufactureYear;
+//        result = 31 * result + dollarPrice;
+//        return result;
+//    }
 
     public static void main(String[] args) {
         Iphone iphone1 = new Iphone("X", "Black", 999, 123);

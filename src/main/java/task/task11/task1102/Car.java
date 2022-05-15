@@ -10,6 +10,11 @@ public class Car {
     private String model;
     private int year;
 
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
     public Car(String model, int year) {
         this.model = model;
         this.year = year;
