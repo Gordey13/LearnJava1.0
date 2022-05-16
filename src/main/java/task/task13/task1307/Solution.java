@@ -44,31 +44,31 @@ public class Solution {
         }
     }
 
-//    public static int[] numbers = new int[10];
-//    public static void init(){
-//        int n = numbers.length  - 1;
-//        for (int i = 0; i < numbers.length / 2; i++) {
-//            numbers[i] = i;
-//        }
-//    }
-//
-//    public static void print(){
-//        for(int number : numbers){
-//            System.out.println(number);
-//        }
-//    }
-//
-//    public static void reverse(){
-//        int n = numbers.length-1;
-//        for (int i = 0; i < numbers.length / 2; i++) {
-//            int temp = numbers[i];
-//            numbers[i] = numbers[n - i];
-//            numbers[n-i] = temp;
-//        }
-//    }
+    public static int[] numbers1 = new int[10];
+    public static void init1(){
+        int n = numbers1.length  - 1;
+        for (int i = 0; i < numbers1.length / 2; i++) {
+            numbers1[i] = i;
+        }
+    }
+
+    public static void print1(){
+        for(int number : numbers1){
+            System.out.println(number);
+        }
+    }
+
+    public static void reverse1(){
+        int n = numbers1.length-1;
+        for (int i = 0; i < numbers1.length / 2; i++) {
+            int temp = numbers1[i];
+            numbers1[i] = numbers1[n - i];
+            numbers1[n-i] = temp;
+        }
+    }
+
 
     public static ArrayList<Integer> numbers = new ArrayList<>(10);
-
     public static void init() {
         for (int i = 0; i < 10; i++) {
             numbers.add(i);
