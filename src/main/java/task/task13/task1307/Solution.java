@@ -5,46 +5,55 @@ import java.util.Scanner;
 
 public class Solution {
 
+    public static ArrayList<Integer> numbers = new ArrayList<>(100);
+
     public static void main(String[] args) {
 
-        Boolean a = true;
-        Boolean a1 = Boolean.valueOf(true);
+//        Boolean a = true;
+//        Boolean a1 = Boolean.valueOf(true);
+//
+//        int c =5;
+//        Integer b = Integer.valueOf(5);
+//
+//        if(c == b.intValue()){
+//
+//        }
+//
+//        ArrayList<String> array = new ArrayList<>(10);
+//
+//        array.get(0);
+//        array.set(0, "First"); // update
+//        array.add("123"); // insert
+//        array.remove(0); // delete
+//
+//        array.size();
+//        array.isEmpty();
+//        System.out.println(array.toString());
+//        array.contains("123");
+//        array.clear();
+//
+//        Scanner console = new Scanner(System.in);
+//        ArrayList<String> array2 = new ArrayList<>(20);
+//        for (int i = 0; i < array2.size(); i++)
+//        {
+//            String s = console.nextLine();
+//            array2.add(s);
+//        }
+//        for (int i = 0; i < array2.size(); i++)
+//        {
+//                int j = array2.size() - i - 1;
+//            System.out.println(array2.get(j));
+//        }
 
-        int c =5;
-        Integer b = Integer.valueOf(5);
+        init();
+        print();
+        reverse();
+        System.out.println("\nОтсортированные числа в натуральном порядке:");
+        print();
 
-        if(c == b.intValue()){
-
-        }
-
-        ArrayList<String> array = new ArrayList<>(10);
-
-        array.get(0);
-        array.set(0, "First"); // update
-        array.add("123"); // insert
-        array.remove(0); // delete
-
-        array.size();
-        array.isEmpty();
-        System.out.println(array.toString());
-        array.contains("123");
-        array.clear();
-
-        Scanner console = new Scanner(System.in);
-        ArrayList<String> array2 = new ArrayList<>(20);
-        for (int i = 0; i < array2.size(); i++)
-        {
-            String s = console.nextLine();
-            array2.add(s);
-        }
-        for (int i = 0; i < array2.size(); i++)
-        {
-                int j = array2.size() - i - 1;
-            System.out.println(array2.get(j));
-        }
     }
 
-    public static int[] numbers1 = new int[10];
+    public static int[] numbers1 = new int[100];
     public static void init1(){
         int n = numbers1.length  - 1;
         for (int i = 0; i < numbers1.length / 2; i++) {
@@ -68,9 +77,8 @@ public class Solution {
     }
 
 
-    public static ArrayList<Integer> numbers = new ArrayList<>(10);
     public static void init() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             numbers.add(i);
         }
     }
@@ -86,7 +94,7 @@ public class Solution {
 
     private static void print() {
         for (int number : numbers) {
-            System.out.println(number);
+            System.out.print(number+" ");
         }
     }
 
