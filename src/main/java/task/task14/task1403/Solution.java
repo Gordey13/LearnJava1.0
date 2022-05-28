@@ -14,7 +14,7 @@ public class Solution {
 
         Iterator<String> iterator1 = words.iterator();
         while(iterator1.hasNext()){
-            String word = iterator.next();
+            String word = iterator1.next();
             System.out.println(word);
         }
 
