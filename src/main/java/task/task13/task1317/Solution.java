@@ -7,8 +7,8 @@ package task.task13.task1317;
 public class Solution {
     private int[] intArray = new int[4];
 
-    public int[] getIntArray() {
-        return intArray;
+    public int[] getIntArray(){
+        return this.intArray;
     }
 
     public void setIntArray(int[] intArray) {
