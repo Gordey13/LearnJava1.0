@@ -18,7 +18,7 @@ public class Solution {
         Collections.copy(destination, source);
 
         if(destination.size() < source.size()){
-            throw new IndexOutOfBoundsException("Размер источника превышает размер приемника")
+            throw new IndexOutOfBoundsException("Размер источника превышает размер приемника");
         }
         for (int i = 0; i < destination.size(); i++) {
             destination.set(i, source.get(i));
