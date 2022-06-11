@@ -7,7 +7,9 @@ public class Solution {
     public static HashMap<String, Double> grandes = new HashMap<>();
 
     public static void main(String[] args) {
-//        add;
+        addStudents();
+        printStudentInfo();
+
     }
 
     public static void printStudentInfo() {

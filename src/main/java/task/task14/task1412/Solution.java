@@ -39,10 +39,10 @@ public class Solution {
             System.out.println("Вывод ");
         } while (true);
 
-        for(String number : numbers){
-            System.out.println(number);
-        }
-        boolean temp; // по умоплчанию default false
+//        for(String number : numbers){
+//            System.out.println(number);
+//        }
+//        boolean temp; // по умоплчанию default false
 
     }
 }
