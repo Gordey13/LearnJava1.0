@@ -1,9 +1,6 @@
 package task.task15.task1506;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Solution {
     public static void main(String[] args) {
@@ -108,6 +105,12 @@ enum Month {
     DECEMBER;
 
     private static final Month[] VALUES = {JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER};
+
+    public static List<Month> asList(){
+        ArrayList<Month> listMonth = new ArrayList<Month>();
+        Collections.addAll(listMonth, values());
+        return listMonth;
+    }
 
     public static Month[] getWinterMonths(){
         return new Month[] {DECEMBER, JANUARY, FEBRUARY};
