@@ -21,7 +21,6 @@ public class Solution {
         students.add(st6);
 
         Solution student = new Solution();
-        student.
     }
 
     void printOverGrade(ArrayList<Student> al, double grade){
