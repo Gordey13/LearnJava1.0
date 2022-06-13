@@ -1,8 +1,7 @@
-package task.Comparator;
+package task.comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class Solution {
@@ -29,16 +28,16 @@ public class Solution {
         listSolids.add(solid4);
         System.out.println(listSolids);
 //        До сортировки
-        Collections.sort(listSolids, new NameComparator());
-//        После сортировки <solid>
+        Collections.sort(listSolids);
+//        После сортировки comparable<solid>
         System.out.println(listSolids);
     }
 }
 
-class Solid {
-    String name;
-    Integer salary;
-    Integer id;
+class Solid implements Comparable<Solid> {
+    private String name;
+    private Integer salary;
+    private Integer id;
 
     public Solid(String name, Integer salary, Integer id) {
         this.name = name;
@@ -54,31 +53,25 @@ class Solid {
                 ", id=" + id +
                 '}';
     }
-}
 
-class IdComparator implements Comparator<Solid> {
     @Override
-    public int compare(Solid res1, Solid res2) {
-        if (res1.id == res2.id) {
-            return 0;
-        } else if (res1.id < res2.id) {
-            return -1;
-        } else {
-            return 1;
+    public int compareTo(Solid anotherSolid) {
+//        if (this.id == anotherSolid.id) {
+//            return 0;
+//        } else if (this.id < anotherSolid.id) {
+//            return -1;
+//        } else {
+//            return 1;
+//        }
+
+//        return this.id- anotherSolid.id;
+
+//        return this.id.compareTo(anotherSolid.id);
+
+        int res = this.name.compareTo(anotherSolid.name);
+        if (res == 0) {
+            res = this.salary.compareTo(anotherSolid.salary);
         }
-    }
-}
-
-class NameComparator implements Comparator<Solid> {
-    @Override
-    public int compare(Solid res1, Solid res2) {
-    return res1.name.compareTo(res2.name);
-    }
-}
-
-class SalaryComparator implements Comparator<Solid> {
-    @Override
-    public int compare(Solid res1, Solid res2) {
-        return res1.salary.compareTo(res2.salary);
+        return res;
     }
 }
