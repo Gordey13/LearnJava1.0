@@ -8,7 +8,7 @@ import java.util.Scanner;
 Поработай обработчиком
 */
 
-public class Solution {
+public class test {
 
     public static final String INPUT_NAME = "\nВведите имя: ";
     public static final String INPUT_AGE = "Введите возраст пользователя '%s': ";
@@ -57,4 +57,3 @@ public class Solution {
         System.out.printf(FOUND, user.getName(), users.indexOf(user));
     }
 }
-
