@@ -1,5 +1,11 @@
 package task.task16.task1603;
 
+/*
+Требования:
+В методе copyFile должны перехватываться FileNotFoundException и FileSystemException.
+Все перехваченные исключения нужно оборачивать в RuntimeException и пробрасывать дальше.
+У метода copyFile не должно быть исключений в секции throws.
+*/
 
 import java.io.FileNotFoundException;
 import java.nio.file.FileSystemException;
