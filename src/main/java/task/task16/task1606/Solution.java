@@ -33,7 +33,6 @@ public class Solution {
         } catch (Exception e) {
             printBugMethodName(Thread.currentThread().getStackTrace());
         }
-
     }
 
     static void addVodka(Map<String, Integer> ingredients) {
