@@ -1,4 +1,4 @@
-package task.task16;
+package task.task16.task1601;
 
 public class Solution {
     public static String errorMessage = "Щепка Ашибка аще чесла. Дэээ!";
