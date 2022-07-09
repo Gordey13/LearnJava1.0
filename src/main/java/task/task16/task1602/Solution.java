@@ -12,16 +12,16 @@ package task.task16.task1602;
 */
 
 public class Solution {
+
     public static void main(String[] args) throws Exception {
-        if(generateLuckyNumber() != 13) {
-            System.out.println("Твое счастливое число: " + generateLuckyNumber());
-        } else {
-            throw new Exception("Не повезло");
-        }
+        generateLuckyNumber();
     }
 
-    private static int generateLuckyNumber() {
-        int luckyNumber = (int) (Math.random() * 13);
-        return luckyNumber;
+    static void generateLuckyNumber() throws Exception {
+        int luckyNumber = (int) (Math.random() * 100);
+        if (luckyNumber == 13) {
+            throw new Exception("не повезло");
+        }
+        System.out.println("твое счастливое число: " + luckyNumber);
     }
 }
